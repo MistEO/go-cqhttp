@@ -98,6 +98,11 @@ database: # 数据库相关设置
     enable: false
     cachettl: 3600000000000 # 1h
 
+  # 媒体文件缓存， 删除此项则使用缓存文件(旧版行为)
+  cache:
+    image: data/image.db
+    video: data/video.db
+
 # 连接服务列表
 servers:
   # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
